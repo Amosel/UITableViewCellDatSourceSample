@@ -13,7 +13,7 @@
 		E6D47A161411513900DEDC24 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6D47A151411513900DEDC24 /* CoreData.framework */; };
 		E6D47A1C1411513900DEDC24 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E6D47A1A1411513900DEDC24 /* InfoPlist.strings */; };
 		E6D47A1E1411513900DEDC24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D47A1D1411513900DEDC24 /* main.m */; };
-		E6D47A221411513900DEDC24 /* AEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D47A211411513900DEDC24 /* AEAppDelegate.m */; };
+		E6D47A221411513900DEDC24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D47A211411513900DEDC24 /* AppDelegate.m */; };
 		E6D47A251411513900DEDC24 /* UITableViewCellDatSourceSample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E6D47A231411513900DEDC24 /* UITableViewCellDatSourceSample.xcdatamodeld */; };
 		E6D47A281411513900DEDC24 /* AEMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D47A271411513900DEDC24 /* AEMasterViewController.m */; };
 		E6D47A2B1411513900DEDC24 /* AEDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D47A2A1411513900DEDC24 /* AEDetailViewController.m */; };
@@ -29,16 +29,16 @@
 		E6D47A111411513900DEDC24 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E6D47A131411513900DEDC24 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		E6D47A151411513900DEDC24 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		E6D47A191411513900DEDC24 /* UITableViewCellDatSourceSample-Info.plist */ = {isa = PBXFileReference; path = "UITableViewCellDatSourceSample-Info.plist"; sourceTree = "<group>"; };
+		E6D47A191411513900DEDC24 /* UITableViewCellDatSourceSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UITableViewCellDatSourceSample-Info.plist"; sourceTree = "<group>"; };
 		E6D47A1B1411513900DEDC24 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E6D47A1D1411513900DEDC24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E6D47A1F1411513900DEDC24 /* UITableViewCellDatSourceSample-Prefix.pch */ = {isa = PBXFileReference; path = "UITableViewCellDatSourceSample-Prefix.pch"; sourceTree = "<group>"; };
-		E6D47A201411513900DEDC24 /* AEAppDelegate.h */ = {isa = PBXFileReference; path = AEAppDelegate.h; sourceTree = "<group>"; };
-		E6D47A211411513900DEDC24 /* AEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AEAppDelegate.m; sourceTree = "<group>"; };
+		E6D47A1F1411513900DEDC24 /* UITableViewCellDatSourceSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableViewCellDatSourceSample-Prefix.pch"; sourceTree = "<group>"; };
+		E6D47A201411513900DEDC24 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		E6D47A211411513900DEDC24 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E6D47A241411513900DEDC24 /* UITableViewCellDatSourceSample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UITableViewCellDatSourceSample.xcdatamodel; sourceTree = "<group>"; };
-		E6D47A261411513900DEDC24 /* AEMasterViewController.h */ = {isa = PBXFileReference; path = AEMasterViewController.h; sourceTree = "<group>"; };
+		E6D47A261411513900DEDC24 /* AEMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AEMasterViewController.h; sourceTree = "<group>"; };
 		E6D47A271411513900DEDC24 /* AEMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AEMasterViewController.m; sourceTree = "<group>"; };
-		E6D47A291411513900DEDC24 /* AEDetailViewController.h */ = {isa = PBXFileReference; path = AEDetailViewController.h; sourceTree = "<group>"; };
+		E6D47A291411513900DEDC24 /* AEDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AEDetailViewController.h; sourceTree = "<group>"; };
 		E6D47A2A1411513900DEDC24 /* AEDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AEDetailViewController.m; sourceTree = "<group>"; };
 		E6D47A2D1411513900DEDC24 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AEMasterViewController_iPhone.xib; sourceTree = "<group>"; };
 		E6D47A301411513900DEDC24 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AEMasterViewController_iPad.xib; sourceTree = "<group>"; };
@@ -92,8 +92,8 @@
 		E6D47A171411513900DEDC24 /* UITableViewCellDatSourceSample */ = {
 			isa = PBXGroup;
 			children = (
-				E6D47A201411513900DEDC24 /* AEAppDelegate.h */,
-				E6D47A211411513900DEDC24 /* AEAppDelegate.m */,
+				E6D47A201411513900DEDC24 /* AppDelegate.h */,
+				E6D47A211411513900DEDC24 /* AppDelegate.m */,
 				E6D47A261411513900DEDC24 /* AEMasterViewController.h */,
 				E6D47A271411513900DEDC24 /* AEMasterViewController.m */,
 				E6D47A291411513900DEDC24 /* AEDetailViewController.h */,
@@ -186,7 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6D47A1E1411513900DEDC24 /* main.m in Sources */,
-				E6D47A221411513900DEDC24 /* AEAppDelegate.m in Sources */,
+				E6D47A221411513900DEDC24 /* AppDelegate.m in Sources */,
 				E6D47A251411513900DEDC24 /* UITableViewCellDatSourceSample.xcdatamodeld in Sources */,
 				E6D47A281411513900DEDC24 /* AEMasterViewController.m in Sources */,
 				E6D47A2B1411513900DEDC24 /* AEDetailViewController.m in Sources */,
