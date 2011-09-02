@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E668BFA414117D170023FD10 /* AEVenueTableCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E668BFA314117D170023FD10 /* AEVenueTableCellView.xib */; };
 		E6D47A101411513900DEDC24 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6D47A0F1411513900DEDC24 /* UIKit.framework */; };
 		E6D47A121411513900DEDC24 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6D47A111411513900DEDC24 /* Foundation.framework */; };
 		E6D47A141411513900DEDC24 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6D47A131411513900DEDC24 /* CoreGraphics.framework */; };
@@ -14,16 +15,32 @@
 		E6D47A1C1411513900DEDC24 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E6D47A1A1411513900DEDC24 /* InfoPlist.strings */; };
 		E6D47A1E1411513900DEDC24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D47A1D1411513900DEDC24 /* main.m */; };
 		E6D47A221411513900DEDC24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D47A211411513900DEDC24 /* AppDelegate.m */; };
-		E6D47A251411513900DEDC24 /* UITableViewCellDatSourceSample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E6D47A231411513900DEDC24 /* UITableViewCellDatSourceSample.xcdatamodeld */; };
 		E6D47A281411513900DEDC24 /* AEMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D47A271411513900DEDC24 /* AEMasterViewController.m */; };
 		E6D47A2B1411513900DEDC24 /* AEDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D47A2A1411513900DEDC24 /* AEDetailViewController.m */; };
 		E6D47A2E1411513900DEDC24 /* AEMasterViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6D47A2C1411513900DEDC24 /* AEMasterViewController_iPhone.xib */; };
 		E6D47A311411513900DEDC24 /* AEMasterViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6D47A2F1411513900DEDC24 /* AEMasterViewController_iPad.xib */; };
 		E6D47A341411513900DEDC24 /* AEDetailViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6D47A321411513900DEDC24 /* AEDetailViewController_iPhone.xib */; };
 		E6D47A371411513900DEDC24 /* AEDetailViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6D47A351411513900DEDC24 /* AEDetailViewController_iPad.xib */; };
+		E6D47B471411688D00DEDC24 /* file.plist in Resources */ = {isa = PBXBuildFile; fileRef = E6D47B461411688C00DEDC24 /* file.plist */; };
+		E6D47B4A14116D0200DEDC24 /* AEVenueTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D47B4914116D0100DEDC24 /* AEVenueTableViewCell.m */; };
+		E6D47B6514116FF400DEDC24 /* NSManagedObject+MagicalDataImport.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D47B5514116FF300DEDC24 /* NSManagedObject+MagicalDataImport.m */; };
+		E6D47B6614116FF400DEDC24 /* NSManagedObject+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D47B5714116FF300DEDC24 /* NSManagedObject+MagicalRecord.m */; };
+		E6D47B6714116FF400DEDC24 /* NSManagedObjectContext+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D47B5914116FF300DEDC24 /* NSManagedObjectContext+MagicalRecord.m */; };
+		E6D47B6814116FF400DEDC24 /* NSManagedObjectModel+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D47B5B14116FF300DEDC24 /* NSManagedObjectModel+MagicalRecord.m */; };
+		E6D47B6914116FF400DEDC24 /* NSPersistentStore+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D47B5D14116FF300DEDC24 /* NSPersistentStore+MagicalRecord.m */; };
+		E6D47B6A14116FF400DEDC24 /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D47B5F14116FF300DEDC24 /* NSPersistentStoreCoordinator+MagicalRecord.m */; };
+		E6D47B6B14116FF400DEDC24 /* MagicalRecordHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D47B6214116FF300DEDC24 /* MagicalRecordHelpers.m */; };
+		E6D47B6C14116FF400DEDC24 /* MRCoreDataAction.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D47B6414116FF300DEDC24 /* MRCoreDataAction.m */; };
+		E6D47B70141173D900DEDC24 /* UITableViewCellDatSourceSample_1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E6D47B6D141173D900DEDC24 /* UITableViewCellDatSourceSample_1.xcdatamodeld */; };
+		E6D47B761411740C00DEDC24 /* AECategory.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D47B751411740C00DEDC24 /* AECategory.m */; };
+		E6D47B791411740C00DEDC24 /* AEVenue.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D47B781411740C00DEDC24 /* AEVenue.m */; };
+		E6D47B7C1411740C00DEDC24 /* AELocation.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D47B7B1411740C00DEDC24 /* AELocation.m */; };
+		E6D47B7F141177BF00DEDC24 /* AEVenue+AEVenueTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D47B7E141177BF00DEDC24 /* AEVenue+AEVenueTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E668BF9D141179820023FD10 /* UITableViewCellDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITableViewCellDataSource.h; sourceTree = "<group>"; };
+		E668BFA314117D170023FD10 /* AEVenueTableCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AEVenueTableCellView.xib; sourceTree = "<group>"; };
 		E6D47A0B1411513900DEDC24 /* UITableViewCellDatSourceSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITableViewCellDatSourceSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6D47A0F1411513900DEDC24 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E6D47A111411513900DEDC24 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -33,9 +50,8 @@
 		E6D47A1B1411513900DEDC24 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E6D47A1D1411513900DEDC24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E6D47A1F1411513900DEDC24 /* UITableViewCellDatSourceSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableViewCellDatSourceSample-Prefix.pch"; sourceTree = "<group>"; };
-		E6D47A201411513900DEDC24 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		E6D47A201411513900DEDC24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E6D47A211411513900DEDC24 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E6D47A241411513900DEDC24 /* UITableViewCellDatSourceSample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UITableViewCellDatSourceSample.xcdatamodel; sourceTree = "<group>"; };
 		E6D47A261411513900DEDC24 /* AEMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AEMasterViewController.h; sourceTree = "<group>"; };
 		E6D47A271411513900DEDC24 /* AEMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AEMasterViewController.m; sourceTree = "<group>"; };
 		E6D47A291411513900DEDC24 /* AEDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AEDetailViewController.h; sourceTree = "<group>"; };
@@ -44,6 +60,36 @@
 		E6D47A301411513900DEDC24 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AEMasterViewController_iPad.xib; sourceTree = "<group>"; };
 		E6D47A331411513900DEDC24 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AEDetailViewController_iPhone.xib; sourceTree = "<group>"; };
 		E6D47A361411513900DEDC24 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AEDetailViewController_iPad.xib; sourceTree = "<group>"; };
+		E6D47B461411688C00DEDC24 /* file.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = file.plist; sourceTree = "<group>"; };
+		E6D47B4814116D0100DEDC24 /* AEVenueTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEVenueTableViewCell.h; sourceTree = "<group>"; };
+		E6D47B4914116D0100DEDC24 /* AEVenueTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEVenueTableViewCell.m; sourceTree = "<group>"; };
+		E6D47B5414116FF300DEDC24 /* NSManagedObject+MagicalDataImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+MagicalDataImport.h"; sourceTree = "<group>"; };
+		E6D47B5514116FF300DEDC24 /* NSManagedObject+MagicalDataImport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+MagicalDataImport.m"; sourceTree = "<group>"; };
+		E6D47B5614116FF300DEDC24 /* NSManagedObject+MagicalRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+MagicalRecord.h"; sourceTree = "<group>"; };
+		E6D47B5714116FF300DEDC24 /* NSManagedObject+MagicalRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+MagicalRecord.m"; sourceTree = "<group>"; };
+		E6D47B5814116FF300DEDC24 /* NSManagedObjectContext+MagicalRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+MagicalRecord.h"; sourceTree = "<group>"; };
+		E6D47B5914116FF300DEDC24 /* NSManagedObjectContext+MagicalRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+MagicalRecord.m"; sourceTree = "<group>"; };
+		E6D47B5A14116FF300DEDC24 /* NSManagedObjectModel+MagicalRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectModel+MagicalRecord.h"; sourceTree = "<group>"; };
+		E6D47B5B14116FF300DEDC24 /* NSManagedObjectModel+MagicalRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectModel+MagicalRecord.m"; sourceTree = "<group>"; };
+		E6D47B5C14116FF300DEDC24 /* NSPersistentStore+MagicalRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSPersistentStore+MagicalRecord.h"; sourceTree = "<group>"; };
+		E6D47B5D14116FF300DEDC24 /* NSPersistentStore+MagicalRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSPersistentStore+MagicalRecord.m"; sourceTree = "<group>"; };
+		E6D47B5E14116FF300DEDC24 /* NSPersistentStoreCoordinator+MagicalRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSPersistentStoreCoordinator+MagicalRecord.h"; sourceTree = "<group>"; };
+		E6D47B5F14116FF300DEDC24 /* NSPersistentStoreCoordinator+MagicalRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSPersistentStoreCoordinator+MagicalRecord.m"; sourceTree = "<group>"; };
+		E6D47B6014116FF300DEDC24 /* CoreData+MagicalRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreData+MagicalRecord.h"; sourceTree = "<group>"; };
+		E6D47B6114116FF300DEDC24 /* MagicalRecordHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalRecordHelpers.h; sourceTree = "<group>"; };
+		E6D47B6214116FF300DEDC24 /* MagicalRecordHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicalRecordHelpers.m; sourceTree = "<group>"; };
+		E6D47B6314116FF300DEDC24 /* MRCoreDataAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCoreDataAction.h; sourceTree = "<group>"; };
+		E6D47B6414116FF300DEDC24 /* MRCoreDataAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCoreDataAction.m; sourceTree = "<group>"; };
+		E6D47B6E141173D900DEDC24 /* UITableViewCellDatSourceSample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UITableViewCellDatSourceSample.xcdatamodel; sourceTree = "<group>"; };
+		E6D47B6F141173D900DEDC24 /* UITableViewCellDatSourceSample_ 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "UITableViewCellDatSourceSample_ 2.xcdatamodel"; sourceTree = "<group>"; };
+		E6D47B741411740B00DEDC24 /* AECategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AECategory.h; sourceTree = "<group>"; };
+		E6D47B751411740C00DEDC24 /* AECategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AECategory.m; sourceTree = "<group>"; };
+		E6D47B771411740C00DEDC24 /* AEVenue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AEVenue.h; sourceTree = "<group>"; };
+		E6D47B781411740C00DEDC24 /* AEVenue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AEVenue.m; sourceTree = "<group>"; };
+		E6D47B7A1411740C00DEDC24 /* AELocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AELocation.h; sourceTree = "<group>"; };
+		E6D47B7B1411740C00DEDC24 /* AELocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AELocation.m; sourceTree = "<group>"; };
+		E6D47B7D141177BF00DEDC24 /* AEVenue+AEVenueTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AEVenue+AEVenueTableViewCell.h"; sourceTree = "<group>"; };
+		E6D47B7E141177BF00DEDC24 /* AEVenue+AEVenueTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AEVenue+AEVenueTableViewCell.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +110,8 @@
 		E6D47A001411513900DEDC24 = {
 			isa = PBXGroup;
 			children = (
+				E6D47B5114116FE500DEDC24 /* Additions */,
+				E6D47B461411688C00DEDC24 /* file.plist */,
 				E6D47A171411513900DEDC24 /* UITableViewCellDatSourceSample */,
 				E6D47A0E1411513900DEDC24 /* Frameworks */,
 				E6D47A0C1411513900DEDC24 /* Products */,
@@ -94,15 +142,21 @@
 			children = (
 				E6D47A201411513900DEDC24 /* AppDelegate.h */,
 				E6D47A211411513900DEDC24 /* AppDelegate.m */,
-				E6D47A261411513900DEDC24 /* AEMasterViewController.h */,
-				E6D47A271411513900DEDC24 /* AEMasterViewController.m */,
 				E6D47A291411513900DEDC24 /* AEDetailViewController.h */,
 				E6D47A2A1411513900DEDC24 /* AEDetailViewController.m */,
+				E6D47A261411513900DEDC24 /* AEMasterViewController.h */,
+				E6D47A271411513900DEDC24 /* AEMasterViewController.m */,
+				E668BF9D141179820023FD10 /* UITableViewCellDataSource.h */,
+				E668BFA314117D170023FD10 /* AEVenueTableCellView.xib */,
+				E6D47B4814116D0100DEDC24 /* AEVenueTableViewCell.h */,
+				E6D47B4914116D0100DEDC24 /* AEVenueTableViewCell.m */,
+				E6D47B7D141177BF00DEDC24 /* AEVenue+AEVenueTableViewCell.h */,
+				E6D47B7E141177BF00DEDC24 /* AEVenue+AEVenueTableViewCell.m */,
+				E6D47A3F14115A8500DEDC24 /* CoreData Model */,
 				E6D47A2C1411513900DEDC24 /* AEMasterViewController_iPhone.xib */,
 				E6D47A2F1411513900DEDC24 /* AEMasterViewController_iPad.xib */,
 				E6D47A321411513900DEDC24 /* AEDetailViewController_iPhone.xib */,
 				E6D47A351411513900DEDC24 /* AEDetailViewController_iPad.xib */,
-				E6D47A231411513900DEDC24 /* UITableViewCellDatSourceSample.xcdatamodeld */,
 				E6D47A181411513900DEDC24 /* Supporting Files */,
 			);
 			path = UITableViewCellDatSourceSample;
@@ -117,6 +171,61 @@
 				E6D47A1F1411513900DEDC24 /* UITableViewCellDatSourceSample-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E6D47A3F14115A8500DEDC24 /* CoreData Model */ = {
+			isa = PBXGroup;
+			children = (
+				E6D47B6D141173D900DEDC24 /* UITableViewCellDatSourceSample_1.xcdatamodeld */,
+				E6D47B7A1411740C00DEDC24 /* AELocation.h */,
+				E6D47B7B1411740C00DEDC24 /* AELocation.m */,
+				E6D47B771411740C00DEDC24 /* AEVenue.h */,
+				E6D47B781411740C00DEDC24 /* AEVenue.m */,
+				E6D47B741411740B00DEDC24 /* AECategory.h */,
+				E6D47B751411740C00DEDC24 /* AECategory.m */,
+			);
+			name = "CoreData Model";
+			sourceTree = "<group>";
+		};
+		E6D47B5114116FE500DEDC24 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				E6D47B5214116FF300DEDC24 /* Source */,
+			);
+			name = Additions;
+			sourceTree = "<group>";
+		};
+		E6D47B5214116FF300DEDC24 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				E6D47B5314116FF300DEDC24 /* Categories */,
+				E6D47B6014116FF300DEDC24 /* CoreData+MagicalRecord.h */,
+				E6D47B6114116FF300DEDC24 /* MagicalRecordHelpers.h */,
+				E6D47B6214116FF300DEDC24 /* MagicalRecordHelpers.m */,
+				E6D47B6314116FF300DEDC24 /* MRCoreDataAction.h */,
+				E6D47B6414116FF300DEDC24 /* MRCoreDataAction.m */,
+			);
+			name = Source;
+			path = MagicalRecord/Source;
+			sourceTree = "<group>";
+		};
+		E6D47B5314116FF300DEDC24 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				E6D47B5414116FF300DEDC24 /* NSManagedObject+MagicalDataImport.h */,
+				E6D47B5514116FF300DEDC24 /* NSManagedObject+MagicalDataImport.m */,
+				E6D47B5614116FF300DEDC24 /* NSManagedObject+MagicalRecord.h */,
+				E6D47B5714116FF300DEDC24 /* NSManagedObject+MagicalRecord.m */,
+				E6D47B5814116FF300DEDC24 /* NSManagedObjectContext+MagicalRecord.h */,
+				E6D47B5914116FF300DEDC24 /* NSManagedObjectContext+MagicalRecord.m */,
+				E6D47B5A14116FF300DEDC24 /* NSManagedObjectModel+MagicalRecord.h */,
+				E6D47B5B14116FF300DEDC24 /* NSManagedObjectModel+MagicalRecord.m */,
+				E6D47B5C14116FF300DEDC24 /* NSPersistentStore+MagicalRecord.h */,
+				E6D47B5D14116FF300DEDC24 /* NSPersistentStore+MagicalRecord.m */,
+				E6D47B5E14116FF300DEDC24 /* NSPersistentStoreCoordinator+MagicalRecord.h */,
+				E6D47B5F14116FF300DEDC24 /* NSPersistentStoreCoordinator+MagicalRecord.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +284,8 @@
 				E6D47A311411513900DEDC24 /* AEMasterViewController_iPad.xib in Resources */,
 				E6D47A341411513900DEDC24 /* AEDetailViewController_iPhone.xib in Resources */,
 				E6D47A371411513900DEDC24 /* AEDetailViewController_iPad.xib in Resources */,
+				E6D47B471411688D00DEDC24 /* file.plist in Resources */,
+				E668BFA414117D170023FD10 /* AEVenueTableCellView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,9 +298,22 @@
 			files = (
 				E6D47A1E1411513900DEDC24 /* main.m in Sources */,
 				E6D47A221411513900DEDC24 /* AppDelegate.m in Sources */,
-				E6D47A251411513900DEDC24 /* UITableViewCellDatSourceSample.xcdatamodeld in Sources */,
 				E6D47A281411513900DEDC24 /* AEMasterViewController.m in Sources */,
 				E6D47A2B1411513900DEDC24 /* AEDetailViewController.m in Sources */,
+				E6D47B4A14116D0200DEDC24 /* AEVenueTableViewCell.m in Sources */,
+				E6D47B6514116FF400DEDC24 /* NSManagedObject+MagicalDataImport.m in Sources */,
+				E6D47B6614116FF400DEDC24 /* NSManagedObject+MagicalRecord.m in Sources */,
+				E6D47B6714116FF400DEDC24 /* NSManagedObjectContext+MagicalRecord.m in Sources */,
+				E6D47B6814116FF400DEDC24 /* NSManagedObjectModel+MagicalRecord.m in Sources */,
+				E6D47B6914116FF400DEDC24 /* NSPersistentStore+MagicalRecord.m in Sources */,
+				E6D47B6A14116FF400DEDC24 /* NSPersistentStoreCoordinator+MagicalRecord.m in Sources */,
+				E6D47B6B14116FF400DEDC24 /* MagicalRecordHelpers.m in Sources */,
+				E6D47B6C14116FF400DEDC24 /* MRCoreDataAction.m in Sources */,
+				E6D47B70141173D900DEDC24 /* UITableViewCellDatSourceSample_1.xcdatamodeld in Sources */,
+				E6D47B761411740C00DEDC24 /* AECategory.m in Sources */,
+				E6D47B791411740C00DEDC24 /* AEVenue.m in Sources */,
+				E6D47B7C1411740C00DEDC24 /* AELocation.m in Sources */,
+				E6D47B7F141177BF00DEDC24 /* AEVenue+AEVenueTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,17 +451,19 @@
 				E6D47A3C1411513900DEDC24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		E6D47A231411513900DEDC24 /* UITableViewCellDatSourceSample.xcdatamodeld */ = {
+		E6D47B6D141173D900DEDC24 /* UITableViewCellDatSourceSample_1.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				E6D47A241411513900DEDC24 /* UITableViewCellDatSourceSample.xcdatamodel */,
+				E6D47B6E141173D900DEDC24 /* UITableViewCellDatSourceSample.xcdatamodel */,
+				E6D47B6F141173D900DEDC24 /* UITableViewCellDatSourceSample_ 2.xcdatamodel */,
 			);
-			currentVersion = E6D47A241411513900DEDC24 /* UITableViewCellDatSourceSample.xcdatamodel */;
-			path = UITableViewCellDatSourceSample.xcdatamodeld;
+			currentVersion = E6D47B6E141173D900DEDC24 /* UITableViewCellDatSourceSample.xcdatamodel */;
+			path = UITableViewCellDatSourceSample_1.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

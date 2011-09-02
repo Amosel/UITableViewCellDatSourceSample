@@ -12,10 +12,10 @@
 
 #import <CoreData/CoreData.h>
 
-@interface AEMasterViewController : UIViewController
+@interface AEMasterViewController : UITableViewController
 {
-    NSMutableArray*_items;
+    NSArray*_items;
 }
 @property (strong, nonatomic) AEDetailViewController *detailViewController;
-@property (strong, nonatomic) NSMutableArray*items;
+@property (strong, nonatomic) NSArray*items;
 @end

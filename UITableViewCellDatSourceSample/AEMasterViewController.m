@@ -9,6 +9,7 @@
 #import "AEMasterViewController.h"
 
 #import "AEDetailViewController.h"
+#import "AEVenueTableViewCell.h"
 
 @interface AEMasterViewController (UITableView)
 @end
@@ -53,6 +54,8 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    if ([self respondsToSelector:@selector(loadObjectsFromModel)]) 
+        [self performSelector:@selector(loadObjectsFromModel)];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -79,9 +82,85 @@
         return YES;
     }
 }
+
+-(AEVenueTableViewCell *)venueCellFromNib
+{
+    AEVenueTableViewCell * result = nil;
+    NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:@"AEVenueTableCellView" owner:nil options:nil];
+    
+    for(id currentObject in topLevelObjects)
+    {
+        if([currentObject isKindOfClass:[AEVenueTableViewCell class]])
+        {
+            result = (AEVenueTableViewCell *)currentObject;
+            break;
+        }
+    }
+    return result;
+}
+
 @end
 
+//#import "CoreData+MagicalRecord.h"
+#import "AEVenue.h"
+#import "AECategory.h"
+#import "AELocation.h"
+#import "NSManagedObject+MagicalRecord.h"
+
 @implementation AEMasterViewController (Model)
+
+-(void)modelDidLoad
+{
+    NSFetchRequest* request = [[NSFetchRequest alloc] initWithEntityName:@"AEVenue"];    
+    NSSortDescriptor* descriptor = [NSSortDescriptor sortDescriptorWithKey:@"id" ascending:NO];
+	[request setSortDescriptors:[NSArray arrayWithObject:descriptor]];
+    
+    _items = [AEVenue executeFetchRequest:request];
+    [self.tableView reloadData];
+}
+
+-(void)loadObjectsFromModel
+{
+    NSString* path = [[NSBundle mainBundle] pathForResource:@"file.plist" ofType:nil];
+    NSDictionary* dict = [[NSDictionary alloc] initWithContentsOfFile:path];
+        
+    [MagicalRecordHelpers setupCoreDataStack];
+    
+    for (NSDictionary* venueWrapperDict in [[[dict objectForKey:@"response"] objectForKey:@"venues"] objectForKey:@"items"])
+    {
+        NSDictionary* venueDict = [venueWrapperDict objectForKey:@"venue"];
+        AEVenue*venue = [AEVenue createEntity];
+        
+        venue.id = [NSNumber numberWithLongLong:[[venueDict objectForKey:@"id"] longLongValue]];
+        venue.name = [venueDict objectForKey:@"name"];
+        NSArray* cateogries = [venueDict objectForKey:@"categories"];
+        if (cateogries)
+        {
+            for (NSDictionary*catDict in cateogries)
+            {
+                AECategory* cat = [AECategory createEntity];
+                cat.shortName = [catDict objectForKey:@"shortName"];
+                cat.id = [NSNumber numberWithLongLong:[[venueDict objectForKey:@"id"] longLongValue]];
+                cat.icon = [catDict objectForKey:@"icon"];
+                [venue addCategoriesObject:cat];
+            }
+        }
+        NSDictionary* locationDict = [venueDict objectForKey:@"location"];
+        if (locationDict)
+        {
+            AELocation* location = [AELocation createEntity];
+            location.address = [locationDict objectForKey:@"address"];
+            location.city = [locationDict objectForKey:@"city"];
+            location.country = [locationDict objectForKey:@"country"];
+            location.latitude = [locationDict objectForKey:@"lat"];
+            location.longitude = [locationDict objectForKey:@"lng"];
+            
+            [venue setLocation:location];
+        }
+    }
+    
+    [self modelDidLoad];
+}
 
 @end
 
@@ -97,14 +176,14 @@
 {
     static NSString *CellIdentifier = @"Cell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    AEVenueTableViewCell *cell = (AEVenueTableViewCell*)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [self venueCellFromNib];
         if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         }
     }
-    
+    cell.item = [_items objectAtIndex:indexPath.row];
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath

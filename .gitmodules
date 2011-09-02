@@ -1,0 +1,6 @@
+[submodule "MagicalRecord"]
+	path = MagicalRecord
+	url = https://github.com/magicalpanda/MagicalRecord.git
+[submodule "foursquare"]
+	path = foursquare
+	url = https://github.com/Constantine-Fry/Foursquare-API-v2.git
